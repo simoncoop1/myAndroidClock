@@ -14,10 +14,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val myAnim = findViewById<ImageView>(R.id.imageView2).apply {
+            SeekableAnimatedVectorDrawable()
             setImageDrawable(getDrawable(R.drawable.shape_vector_animator))
             myShapeAnimation = getDrawable() as AnimatedVectorDrawable
         }
-        myAnim.setOnClickListener({ myShapeAnimation.start() })
+        myAnim.setOnClickListener({
+            myShapeAnimation.currentPlayTime = 1
+            myShapeAnimation.start() })
     }
 
 
