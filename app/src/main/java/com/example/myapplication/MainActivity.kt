@@ -7,20 +7,35 @@ import android.widget.ImageView
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var myShapeAnimation: AnimatedVectorDrawable
+    private lateinit var mySAMinute: AnimatedVectorDrawable
+    private lateinit var mySASecond: AnimatedVectorDrawable
+    private lateinit var mySAHour: AnimatedVectorDrawable
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val myAnim = findViewById<ImageView>(R.id.imageView2).apply {
-            SeekableAnimatedVectorDrawable()
+        val myAnimMinute = findViewById<ImageView>(R.id.imageView2).apply {
             setImageDrawable(getDrawable(R.drawable.shape_vector_animator))
-            myShapeAnimation = getDrawable() as AnimatedVectorDrawable
+            mySAMinute = getDrawable() as AnimatedVectorDrawable
         }
-        myAnim.setOnClickListener({
-            myShapeAnimation.currentPlayTime = 1
-            myShapeAnimation.start() })
+
+        val myAnimSec = findViewById<ImageView>(R.id.imageView3).apply {
+            setImageDrawable(getDrawable(R.drawable.shape_vector_animator))
+            mySAMinute = getDrawable() as AnimatedVectorDrawable
+        }
+
+        val myAnimHour = findViewById<ImageView>(R.id.imageView4).apply {
+            setImageDrawable(getDrawable(R.drawable.shape_vector_animator))
+            mySAHour = getDrawable() as AnimatedVectorDrawable
+        }
+
+
+
+        myAnimHour.setOnClickListener({
+            mySAMinute.start()
+            mySASecond.start()
+            mySAHour.start()})
     }
 
 
