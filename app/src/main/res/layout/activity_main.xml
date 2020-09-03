@@ -42,11 +42,14 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="71dp"
-        android:layout_height="166dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
         app:srcCompat="@drawable/ic_chand2"
-        tools:layout_editor_absoluteX="324dp"
-        tools:layout_editor_absoluteY="549dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

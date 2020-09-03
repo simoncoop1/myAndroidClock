@@ -4,45 +4,30 @@
     android:height="800dp"
     android:viewportWidth="211.66666"
     android:viewportHeight="211.66667">
-  <group android:name="rotationGroup" android:pivotX="105.5"
+  <group
+      android:name="rotationGroup"
+      android:pivotX="105.5"
       android:pivotY="105.5">
     <path
         android:pathData="M105.833,105.833a5.292,51.207 90,1 0,102.415 0a5.292,51.207 90,1 0,-102.415 0z"
-        android:strokeWidth="0.26458332">
+        android:strokeWidth="0.26458332"
+        android:strokeColor="#00000000">
       <aapt:attr name="android:fillColor">
         <gradient
-            android:startY="105.522064"
-            android:startX="133.79034"
-            android:endY="105.988976"
-            android:endX="107.33943"
-            android:type="linear"
-            android:tileMode="clamp">
-          <item android:offset="0" android:color="#FF552200"/>
-          <item android:offset="1" android:color="#00552200"/>
+            android:startY="106.506004"
+            android:startX="155.61087"
+            android:endY="105.38489"
+            android:endX="106.675186"
+            android:type="linear">
+          <item android:offset="0" android:color="#FF9C6451"/>
+          <item android:offset="1" android:color="#009C6451"/>
         </gradient>
       </aapt:attr>
     </path>
     <path
-        android:pathData="M3.173,105.16a7.315,51.207 90,1 0,102.415 0a7.315,51.207 90,1 0,-102.415 0z"
+        android:pathData="m115.764,121.577c-3.927,3.035 -4.967,-5.379 -9.844,-5.346 -4.877,0.033 -5.814,8.46 -9.778,5.478 -3.964,-2.982 3.341,-6.619 1.804,-11.476 -1.537,-4.857 -9.464,-3.188 -7.987,-8.065 1.477,-4.877 7.032,1.288 10.959,-1.746 3.927,-3.035 -0.035,-10.43 4.842,-10.463 4.877,-0.033 1.005,7.415 4.969,10.397 3.964,2.982 9.443,-3.258 10.98,1.599 1.537,4.857 -6.411,3.295 -7.888,8.172 -1.477,4.877 5.871,8.416 1.944,11.451z"
         android:strokeWidth="0.26458332"
         android:fillColor="#333333"
         android:fillAlpha="0.2576687"/>
-    <path
-        android:pathData="M106.418,0.612a51.207,7.315 90,1 0,-0 102.415a51.207,7.315 90,1 0,-0 -102.415z"
-        android:strokeWidth="0.26458332"
-        android:fillColor="#333333"
-        android:fillAlpha="0.2576687"/>
-    <path
-        android:pathData="M106.408,107.295a51.207,7.315 90,1 0,-0 102.415a51.207,7.315 90,1 0,-0 -102.415z"
-        android:strokeWidth="0.26458332"
-        android:fillColor="#333333"
-        android:fillAlpha="0.2576687"/>
-    <path
-        android:pathData="M105.833,105.833 L157.271,59.657"
-        android:strokeLineJoin="miter"
-        android:strokeWidth="0.26458332"
-        android:fillColor="#00000000"
-        android:strokeColor="#000000"
-        android:strokeLineCap="butt"/>
   </group>
 </vector>

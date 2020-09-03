@@ -1,0 +1,6 @@
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="3600000"
+    android:propertyName="rotation"
+    android:valueFrom="522.0"
+    android:valueTo="882.0" android:repeatMode="restart"
+    android:repeatCount="infinite"/>
