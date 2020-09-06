@@ -426,7 +426,7 @@ class MainActivity : AppCompatActivity() {
             //I want to know the minute hand
             //if its the third minute but seconds is over 30, then you are nearest to 4 minutes
             //so we need sends normalised to 0-1 and add it to minutes and round
-            val hourHand = (((now.hours+(now.minutes/60f)) / 24f)*60).roundToInt()
+            val hourHand = ((((now.hours%12)+(now.minutes/60f)) / 12f)*60).roundToInt()
             Log.i("myLog", "hour"+hourHand.toString())
             if(hourHand == 0 || hourHand == 60) {
                 setImageDrawable(getDrawable(R.drawable.shape_vector_animator_h_0))
